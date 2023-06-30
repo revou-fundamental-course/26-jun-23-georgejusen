@@ -1,0 +1,52 @@
+#headerNavigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation {
+    display: flex;
+    gap: 10px;
+    
+}
+
+#headerTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subtitle {
+    color: gray;
+    
+}
+
+/* Call Us Section */
+
+#callUs{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    /* background-color: bisque; */
+}
+
+#article {
+flex-basis: 60%;
+flex-grow: 0;
+}
+
+#form {
+flex-basis: 40%;
+flex-grow: 0;
+background-color: blue;
+border-radius: 2%;
+}
+
+#article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.titleSubtitle {
+    margin: 8px 8px;
+}
