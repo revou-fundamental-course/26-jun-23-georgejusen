@@ -1,123 +1,279 @@
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,
-i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
-tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,
-figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
-time,mark,audio,video {
+/* melakukan konfigurasi HTML dan BODY */
+html,
+body {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,
-header,hgroup,menu,nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
 }
 
-ol,ul {
-    list-style: none;
+
+
+button{
+    border: none;
+    cursor: pointer;
 }
 
-blockquote,q {
-    quotes: none;
-}
-
-blockquote:before,blockquote:after,q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* Melakukan RESET CSS untuk kendali penuh */
-
-
-
-
-
-
-/* Configurasi CSS */
-
-#headerNavigation {
+/* Mengatur navbar */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #edf0f4;
-    width: 100%;
-    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav-navigation ul {
+    margin-right: 50px;
+}
+
+.nav-navigation ul li {
+    display: inline-flex;
     align-items: center;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 20px;
+    background-color: #89a7b1;
+    color: white;
 }
 
-#navigation {
+.logo {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    margin-right: auto;
 }
 
-#headerTitle{
+.logo img {
+    width: 70px;
+    mix-blend-mode: multiply;
+    margin-left: 40px;
+}
+
+/* Hero Image */
+.hero-container {
+    padding-top: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero {
+    height: 578px;
+    background: url(../assets/hero_image/hero3.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    padding: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Mengatur Headlines */
+.headlines {
     display: flex;
+    width: 800px;
+    margin: 50px auto;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 90px;
+    font-size: 25px;
 }
 
-#headerTitle #headline{
-   font-size: 2em;
+.our-headquarter {
+    width: 100%;
 }
 
-#subtitle {
-    color: gray;
+.profile-headline h1 {
+    margin-left: 100px;
+}
+
+.profile {
+    display: flex;
+    margin-left: 40px;
+}
+
+.profile-image {
+    margin: 50px;
+}
+
+.profile-text {
+    text-align: center;
+}
+
+.our-headquarter .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/* mengatur main content */
+/* Gambar */
+.container-satu {
+    display: flex;
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box-photo img {
+    width: 480px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* form */
+.form-container {
+    background-color: #cbdad5;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 20px;
+    /* color: white; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container-text {
+    width: 360px;
+    padding-left: 20px;
+}
+
+.form div {
+    margin: 10px;
+}
+
+.form div .input {
+    width: 360px;
+    height: 42px;
+    border-radius: 4px;
+    display: flex;
+    border: #6e7783;
+}
+
+.form div .button {
+    width: 360px;
+    height: 42px;
+    background-color: #89a7b1;
+    color: white;
+    border: none;
+    cursor: pointer;
     
 }
 
-/* Call Us Section */
+.form div .button:hover {
+    background-color: #29323D;
+}
 
-#callUs{
+/* user testimonial */
+.testimoni {
     display: flex;
     flex-direction: row;
-    gap: 16px;
-    /* background-color: bisque; */
+    align-items: center;
+    margin-left: 8px;
 }
 
-#article {
-flex-basis: 60%;
-flex-grow: 0;
-}
-
-#form {
-flex-basis: 40%;
-flex-grow: 0;
-background-color: #edf0f4;
-border-radius: 2%;
-}
-
-#article img {
-    max-width: 100%;
-    max-height: 100%;
+.testimoni img {
+    width: 40px;
+    margin-right: 20px;
+    justify-content: center;
 }
 
 
-.titleSubtitle {
-    margin: 8px 8px;
+.box-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fdab00;
 }
 
-#main-content {
+/* Feature */
+
+.feature {
+    display: flex;
+}
+
+.feature .icon {
+    padding: 15px;
+}
+
+.circle {
+    background: #e3e3e3;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #6e6e6e;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 48px;
+    margin-right: 5px;
+    text-align: center;
+    width: 48px;
+    justify-content: center;
+}
+
+/* Fisrt Feature */
+
+/* Our Package */
+.our-package {
+    margin: 50px auto;
     width: 960px;
-    background-color: #edf0f4;
+    display: flex;
+    justify-content: center;
+    background-color: #34344e;
+    padding: 20px;
+    color: white;
+}
+
+/* package country */
+.package-country {
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+}
+
+.country img {
+    margin: 20px;
+    width: 48px;
+}
+
+.call-action {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.call-action .headlines {
+    width: 960px;
+    display: flex;
     margin: auto;
-        /* Membuat margin atas dan bawah 0, dan secara otomatis mengatur margin kiri dan kanan agar elemen berada di posisi tengah */
-    padding-top: 50px;
-        /* Opsional: Menambahkan padding atas untuk membuat jarak dari atas halaman */
-    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.call-action .headlines button {
+    margin-top: 40px;
+    width: 400px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #29323D;
+    font-size: 18px;
+    color: white;
 }
