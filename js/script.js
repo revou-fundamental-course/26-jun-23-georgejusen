@@ -1,39 +1,3 @@
-let i = 0; 
-showDivs(SlideIndex);
-
-function plusDivs(index) {
-    showDivs(SlideIndex+=index);
-}
-
-function showDivs(index) {
-    let i;
-    let imgList = document.getElementsByClassName("img-slidershow");
-
-    if (index > imgList.length) {
-        
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function validateForm() {
         let fname = document.forms["form"]["fullname"].value;
