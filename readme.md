@@ -2,7 +2,7 @@
 
 Hi, my name is George Jusen. I'm one of the participants in the RevoU Fundamental Software Engineering course.
 
-In this project I created a simple website about ** DJI Drones Indonesian** by implementing the learning outcomes using **HTML, CSS, and JavaScript.**
+In this project I created a simple website about **DJI Drones Indonesian** by implementing the learning outcomes using **HTML, CSS, and JavaScript.**
 
 # Mini Project Description
 
