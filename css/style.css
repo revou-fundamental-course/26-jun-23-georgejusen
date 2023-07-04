@@ -110,9 +110,9 @@ button{
 
     /* Responsive Navbar */
     /* Ukuran Tablet */
-    @media screen and (max-width: 850px){
+    @media screen and (max-width: 870px){
     nav ul{
-        width: 50%;
+        width: 40%;
     }
 
 
@@ -383,8 +383,6 @@ padding: 20px 0px;
     align-items: flex-start;
 }
 
-.form-input-container{
-}
 
 .form-input-container form table tr td{
     width: 200px;
