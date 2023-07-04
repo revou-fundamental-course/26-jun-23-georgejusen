@@ -4,7 +4,7 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,19 +12,19 @@
     color: white;
 }
 
-body{
+body {
     overflow-x: hidden;
     background-color: #252526;
 }
 
 
-button{
+button {
     border: none;
     cursor: pointer;
 }
 
 /* Mengatur navbar */
-    nav{
+nav {
     display: flex;
     justify-content: space-around;
     height: 50px;
@@ -32,99 +32,133 @@ button{
     width: 100%;
     align-items: center;
     background-color: #3E3E42;
-    }
+}
 
-    nav .logo img{
-        width: 48px;
-    }
+nav .logo img {
+    width: 48px;
+}
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        width: 25%;
-        justify-content: space-around;
-        
-    }
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-around;
 
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-    }
-    nav ul li {
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
     cursor: pointer;
     background-color: #007acc;
     padding: 5px;
     border-radius: 3px;
-    }
+}
 
 
-    .menu-toggle{
-        display: none;
-        flex-direction: column;
-        height: 25px;
-        justify-content: space-around;
-        position: relative;
-    }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-around;
+    position: relative;
+}
 
-    .menu-toggle input {
-        position: absolute;
-        width: 40px;
-        height: 28px;
-        left: -6px;
-        opacity: 0;
-        cursor: pointer;
-        z-index: 2;
-    }
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
 
-    /* hamburger menu */
-    .menu-toggle span {
-        display: block;
-        width: 28px;
-        height: 3px;
-        background-color: white;
-        border-radius: 3px;
-        transition: all 0.5s;
-    }
+/* hamburger menu */
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
 
 
-    /* Hamburger menu animation */
-    .menu-toggle span:nth-child(2) {
-        transform-origin: 0 0;
-    }
-    .menu-toggle span:nth-child(4) {
-        transform-origin: 0 100%;
-    }
+/* Hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
 
-    .menu-toggle input:checked ~ span:nth-child(2){
-        background-color: white;
-        transform: rotate(45deg); translate:(-0px, 2px);
-    }
-    .menu-toggle input:checked ~ span:nth-child(4){
-        background-color: white;
-        transform: rotate(-45deg); translate: (-2px, 0);
-    }
-    .menu-toggle input:checked ~ span:nth-child(3){
-        opacity: 0;
-        transform: scale(0);
-    }
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
 
-    /* Responsive Navbar */
-    /* Ukuran Tablet */
-    @media screen and (max-width: 870px){
-    nav ul{
+.menu-toggle input:checked~span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg);
+    translate: (-0px, 2px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg);
+    translate: (-2px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive Navbar */
+/* Ukuran Tablet */
+@media screen and (max-width: 870px) {
+    nav ul {
         width: 40%;
     }
+
+    .our-headquarter {
+        font-size: 8px;
+    }
+
+    .message-container {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero {
+        max-height: 30vh;
+    }
+
+    .output-box {
+
+
+        max-width: 80%;
+        max-height: 60%;
+        background-color: white;
+
+
+    }
+
+
+
+
 
 
 }
 
 /* Ukuran Mobile */
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .menu-toggle {
         display: flex;
     }
-    
-    
+
+
     nav ul {
         position: absolute;
         right: 0;
@@ -141,22 +175,63 @@ button{
 
 
 
-    nav ul li{
+    nav ul li {
+        height: 20%;
+        background-color: #3E3E42;
+        padding: 0px;
+        border-radius: 0px;
 
-    background-color: #3E3E42;
-    padding: 0px;
-    border-radius: 0px;
-    
-}
+    }
 
-    nav ul.slide{
+    nav ul.slide {
         transform: translateX(0);
     }
 
+    .hero {
+        max-height: 20vh;
+    }
+
+    .hero-text {
+        font-size: 12px;
+    }
+
+    .profile-headline {
+        max-width: 100%;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .output-box {
+
+
+        max-width: 80%;
+        max-height: 60%;
+        background-color: white;
+
+    }
+
+    .headlines {
+        max-width: 50%;
+        margin: 50px auto;
+        font-size: 12px;
+    }
+
+    .message-container {
+        max-width: 100%;
+        max-height: 20%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Hero Image */
-    .hero-container {
+.hero-container {
     padding-top: 50px;
     width: 100%;
     margin: auto;
@@ -171,7 +246,7 @@ button{
 }
 
 .hero-text {
-    padding: 50px;
+    padding: 4%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -192,8 +267,8 @@ button{
     width: 100%;
 }
 
-.profile-headline{
-padding: 20px 0px;
+.profile-headline {
+    padding: 20px 0px;
 }
 
 .profile-headline h1 {
@@ -222,17 +297,17 @@ padding: 20px 0px;
 
 
 /* Message Us */
-.message-container{
+.message-container {
     height: 450px;
     display: flex;
+    justify-content: center;
 }
 
-.form-input-container{
-    margin-left: 100px;
-    flex: 1;
+.form-input-container {
+    padding: 50px;
 }
 
-.form-input-container #input-form{
+.form-input-container #input-form {
     width: 100%;
     height: 35px;
     color: white;
@@ -255,14 +330,14 @@ padding: 20px 0px;
     color: #252526;
 }
 
-.form-input-container table td{
+.form-input-container table td {
     width: 400px;
     height: 40px;
     padding: 5px;
 }
 
 
-.form-input-container table tr input{
+.form-input-container table tr input {
     border: none;
     border-radius: 4px;
     color: black;
@@ -276,14 +351,12 @@ padding: 20px 0px;
     font-size: large;
 }
 
-.output-container{
-   margin-left: 100px;
-    flex: 1;
+.output-container {
     align-items: center;
     justify-content: center;
 }
 
-.output-box{
+.output-box {
     margin: 50px;
     padding: 20px;
     width: 550px;
@@ -292,7 +365,7 @@ padding: 20px 0px;
     border-radius: 6px;
 }
 
-.output-message{
+.output-message {
     color: black;
     font-size: large;
     margin: 15px auto;
@@ -357,7 +430,7 @@ padding: 20px 0px;
     color: white;
     border: none;
     cursor: pointer;
-    
+
 }
 
 .form div .button:hover {
@@ -383,7 +456,7 @@ padding: 20px 0px;
     font-style: italic;
 }
 
-.information{
+.information {
     padding: 20px 0px;
 }
 
