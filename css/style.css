@@ -3,16 +3,19 @@
 
 
 
-html,
-body {
+
+*{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.65;
-    background-color: #252526;
     color: white;
 }
 
+body{
+    overflow-x: hidden;
+    background-color: #252526;
+}
 
 
 button{
@@ -21,45 +24,140 @@ button{
 }
 
 /* Mengatur navbar */
-
-.nav-container {
+    nav{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
     position: fixed;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #3e3e42; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
+    align-items: center;
+    background-color: #3E3E42;
+    }
 
-.nav-navigation ul {
-    padding-right:300px ;
+    nav .logo img{
+        width: 48px;
+    }
 
-}
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 25%;
+        justify-content: space-around;
+        
+    }
 
-.nav-container .logo{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 250px;
-}
-
-.nav-navigation ul li {
-    display:inline-flex;
-    list-style-type: none;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #007acc;
-    color: white;
-    margin-right: 30px;
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li {
     cursor: pointer;
+    background-color: #007acc;
+    padding: 5px;
+    border-radius: 3px;
+    }
+
+
+    .menu-toggle{
+        display: none;
+        flex-direction: column;
+        height: 25px;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .menu-toggle input {
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        left: -6px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /* hamburger menu */
+    .menu-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+
+
+    /* Hamburger menu animation */
+    .menu-toggle span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+    .menu-toggle span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(2){
+        background-color: white;
+        transform: rotate(45deg); translate:(-0px, 2px);
+    }
+    .menu-toggle input:checked ~ span:nth-child(4){
+        background-color: white;
+        transform: rotate(-45deg); translate: (-2px, 0);
+    }
+    .menu-toggle input:checked ~ span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    /* Responsive Navbar */
+    /* Ukuran Tablet */
+    @media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+
+
 }
 
-.nav-container .logo img {
-    width: 70px;
+/* Ukuran Mobile */
+    @media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: #3E3E42;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 0.4s;
+    }
+
+
+
+    nav ul li{
+
+    background-color: #3E3E42;
+    padding: 0px;
+    border-radius: 0px;
+    
+}
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+
 }
 
 /* Hero Image */
-.hero-container {
-    padding-top: 80px;
+    .hero-container {
+    padding-top: 50px;
     width: 100%;
     margin: auto;
 }
@@ -90,7 +188,12 @@ button{
 
 
 .our-headquarter {
+    padding: 50px 0px;
     width: 100%;
+}
+
+.profile-headline{
+padding: 20px 0px;
 }
 
 .profile-headline h1 {
@@ -165,7 +268,8 @@ button{
     height: 42px;
     border-radius: 4px;
     display: flex;
-    border: #6e7783;
+    border: #252526;
+    color: #252526;
 }
 
 .form div .button {
@@ -188,6 +292,7 @@ button{
     flex-direction: row;
     align-items: center;
     margin-left: 8px;
+    padding: 35px 0px;
 }
 
 .testimoni img {
@@ -200,11 +305,14 @@ button{
     font-style: italic;
 }
 
+.information{
+    padding: 20px 0px;
+}
 
 .box-container {
     display: flex;
     flex-direction: row;
-    background-color: #fdab00;
+
 }
 
 /* Feature */
@@ -240,7 +348,7 @@ button{
     width: 960px;
     display: flex;
     justify-content: center;
-    background-color: #34344e;
+    background-color: #3e3e42;
     padding: 20px;
     color: white;
 }
