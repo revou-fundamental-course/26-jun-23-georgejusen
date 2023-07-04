@@ -220,6 +220,82 @@ padding: 20px 0px;
     background-size: cover;
 }
 
+
+/* Message Us */
+.message-container{
+    height: 450px;
+    display: flex;
+}
+
+.form-input-container{
+    margin-left: 100px;
+    flex: 1;
+}
+
+.form-input-container #input-form{
+    width: 435px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    background-color: #007acc;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.form-input-container #input-form:hover {
+   
+    background-color: #29323D;
+  
+}
+
+
+.form-input-container table {
+    padding: 40px;
+    color: #252526;
+}
+
+.form-input-container table td{
+    width: 400px;
+    height: 40px;
+
+    padding: 5px;
+}
+
+
+.form-input-container table tr input{
+    border: none;
+    border-radius: 4px;
+    color: black;
+}
+
+.inputform {
+    width: 250px;
+    height: 40px;
+}
+
+.output-container{
+    margin-right: 100px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-box{
+    margin: 50px;
+    padding: 20px;
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.output-message{
+    color: black;
+    font-size: large;
+    margin: 15px auto;
+}
+
 /* mengatur main content */
 /* Gambar */
 .container-satu {
@@ -372,49 +448,6 @@ padding: 20px 0px;
     margin: 20px;
     width: 48px;
 }
-
-
-
-.main-container-form-table{
-    padding: 50px 0px;
-    display: flex;
-    justify-content: space-evenly;
-
-    align-items: flex-start;
-}
-
-
-.form-input-container form table tr td{
-    width: 200px;
-    height: 60px;
-}
-
-.form-input-container form table input{
-
-    border-radius: 3px;
-    border: none;
-}
-
-.form-input-container input{
-    height: 60%;
-    color: black;
-}
-
-.container-table{
-
-    padding: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 .call-action {
