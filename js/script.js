@@ -1,34 +1,48 @@
-
 function validateForm() {
-        let fname = document.forms["form"]["fullname"].value;
-        let email = document.forms["form"]["email"].value;
-        let option = document.forms["form"]["option"].value;
+  let fname = document.forms["form"]["fullname"].value;
+  let email = document.forms["form"]["email"].value;
+  let option = document.forms["form"]["option"].value;
 
-        if (fname == "") {
-            alert("nama tidak boleh kosong");
-            return false;
-        }
-        if (email == "") {
-            alert("email tidak boleh kosong");
-            return false;
-        }
-        if (option == "") {
-            alert("opsi tidak boleh kosong");
-            return false;
-        }
-        
-        document.getElementById("sender-fullname").innerHTML = fname;
-        document.getElementById("sender-email").innerHTML = email;
-        document.getElementById("sender-option").innerHTML = option;
-        }
+  if (fname == "") {
+    alert("nama tidak boleh kosong");
+    return false;
+  }
+  if (email == "") {
+    alert("email tidak boleh kosong");
+    return false;
+  }
+  if (option == "") {
+    alert("opsi tidak boleh kosong");
+    return false;
+  }
+
+  document.getElementById("sender-fullname").innerHTML = fname;
+  document.getElementById("sender-email").innerHTML = email;
+  document.getElementById("sender-option").innerHTML = option;
+}
 
 let menuToggle = document.querySelector(".menu-toggle input");
 let nav = document.querySelector("nav ul");
 
+document
+  .getElementById("input-form")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Menghentikan pengiriman formulir
 
-menuToggle.addEventListener("click", function() {
+    // Mengambil nilai dari elemen-elemen input
+    let nama = document.getElementById("form-nama").value;
+    let tglLahir = document.getElementById("form-tgl-Lahir").value;
+    let jenisKelamin = document.querySelector(
+      'input[name="jenis_kelamin"]:checked'
+    ).value;
+    let pesan = document.getElementById("form-area").value;
 
-
-    nav.classList.toggle("slide");
-
-});
+    // Mengisi elemen-elemen output dengan nilai yang diambil
+    document.getElementById("timestamp").innerHTML = "Timestamp: " + new Date();
+    document.getElementById("nama").innerHTML = "Nama: " + nama;
+    document.getElementById("tgl-Lahir").innerHTML =
+      "Tanggal Lahir: " + tglLahir;
+    document.getElementById("jenisKelamin").innerHTML =
+      "Jenis Kelamin: " + jenisKelamin;
+    document.getElementById("pesan").innerHTML = "Pesan: " + pesan;
+  });

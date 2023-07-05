@@ -31,6 +31,12 @@
     </nav>
     <!-- Akhir Dari Navbar -->
 
+
+
+    <!-- Slider -->
+
+    <!-- end slider -->
+
     <!-- Gambar Hero -->
     <div class="hero-container">
         <div class="hero">
@@ -39,8 +45,6 @@
                 <p>Ini Latihan Website Pertama</p>
             </div>
         </div>
-        <button onclick="plusDivs(-1)">Previous</button>
-        <button onclick="plusDivs(1)">Next</button>
     </div>
     <!-- akhir gambar hero -->
 
@@ -76,15 +80,15 @@
     <hr>
     <!-- area Message Us -->
     <section class="message-container">
-        <form class="form-input-container">
+        <form id="form-input-container">
             <table>
                 <tr>
                     <td>Nama:</td>
-                    <td><input class="inputform" type="text" name="nama"></td>
+                    <td><input id="form-nama" class="inputform" type="text" name="nama"></td>
                 </tr>
                 <tr>
                     <td>Tanggal Lahir:</td>
-                    <td><input class="inputform" type="date" name="tanggal_lahir"></td>
+                    <td><input id="form-tgl-Lahir" class="inputform" type="date" name="tanggal_lahir"></td>
                 </tr>
                 <tr>
                     <td>Jenis Kelamin:</td>
@@ -97,7 +101,7 @@
                 </tr>
                 <tr>
                     <td>Pesan:</td>
-                    <td><textarea class="inputform" name="pesan"></textarea>
+                    <td><textarea id="form-area" class="inputform" name="pesan"></textarea>
                     </td>
                 </tr>
             </table>
@@ -107,6 +111,7 @@
         </form>
         <div class="output-container">
             <div class="output-box">
+                <p class="output-message" id="timestamp"></p>
                 <p class="output-message" id="nama"></p>
                 <p class="output-message" id="tgl-Lahir"></p>
                 <p class="output-message" id="jenisKelamin"> </p>
