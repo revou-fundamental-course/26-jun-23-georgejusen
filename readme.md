@@ -1,8 +1,5 @@
 ## <span style="color:red">⚠️ Peringatan</span>
 
-**Jangan meng-copy source code ini!**
-
-Menyalin dan menggunakan kode seseorang tanpa izin adalah pelanggaran etika dan hak cipta. Mohon jangan melakukan tindakan tersebut.
 
 Jika Anda membutuhkan referensi atau ingin mempelajari cara kerja kode ini, disarankan untuk membaca dan memahami kode tersebut, dan kemudian menulis ulang sesuai kebutuhan Anda.
 
@@ -10,9 +7,6 @@ Terima kasih atas pengertian dan kerjasamanya.
 
 ## ⚠️ Warning
 
-**Do not copy this source code!**
-
-Copying and using someone else's code without permission is a violation of ethics and copyright. Please refrain from such actions.
 
 If you need a reference or want to learn how this code works, it is recommended to read and understand the code, and then rewrite it according to your needs.
 
