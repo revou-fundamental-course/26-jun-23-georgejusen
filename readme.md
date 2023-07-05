@@ -1,3 +1,13 @@
+## ⚠️ Peringatan
+
+**Jangan meng-copy source code ini!**
+
+Menyalin dan menggunakan kode seseorang tanpa izin adalah pelanggaran etika dan hak cipta. Mohon jangan melakukan tindakan tersebut.
+
+Jika Anda membutuhkan referensi atau ingin mempelajari cara kerja kode ini, disarankan untuk membaca dan memahami kode tersebut, dan kemudian menulis ulang sesuai kebutuhan Anda.
+
+Terima kasih atas pengertian dan kerjasamanya.
+
 # RevoU Mini Project - Fundamental
 
 Hi, my name is George Jusen. I'm one of the participants in the RevoU Fundamental Software Engineering course.
