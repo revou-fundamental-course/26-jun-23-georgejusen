@@ -1,4 +1,4 @@
-## ⚠️ Peringatan
+## <span style="color:red">⚠️ Peringatan</span>
 
 **Jangan meng-copy source code ini!**
 
