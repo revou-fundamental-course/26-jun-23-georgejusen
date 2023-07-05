@@ -1,9 +1,9 @@
 function validateForm() {
-  var fullname = document.getElementById("fullname").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var message = document.getElementById("message").value;
-  var option = document.getElementById("option").value;
+  let fullname = document.getElementById("fullname").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+  let option = document.getElementById("option").value;
 
   // Validasi Nama (tidak boleh kosong)
   if (fullname == "") {
@@ -13,7 +13,7 @@ function validateForm() {
 
   // Validasi Email (jika diisi, harus memiliki format yang valid)
   if (email !== "") {
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       alert("Format email tidak valid");
       return false;
@@ -22,7 +22,7 @@ function validateForm() {
 
   // Validasi Nomor Telepon (jika diisi, harus memiliki format yang valid untuk Indonesia)
   if (phone !== "") {
-    var phonePattern = /^[0-9]{9,12}$/;
+    let phonePattern = /^[0-9]{9,12}$/;
     if (!phonePattern.test(phone)) {
       alert("Format nomor telepon tidak valid");
       return false;
@@ -52,15 +52,15 @@ let nav = document.querySelector("nav ul");
 // Hamburger
 
 window.addEventListener("DOMContentLoaded", function () {
-  var slideIndex = 0;
-  var slides = [
+  let slideIndex = 0;
+  let slides = [
     "../assets/hero_image/drone-hero2-optimized.jpg",
     "../assets/hero_image/dji.jpg",
     "../assets/hero_image/Drones.jpg",
     "../assets/hero_image/hero-drone.jpg",
   ];
 
-  var imageSlide = document.getElementById("image-slide");
+  let imageSlide = document.getElementById("image-slide");
 
   function showSlide(index) {
     imageSlide.style.opacity = 0;
