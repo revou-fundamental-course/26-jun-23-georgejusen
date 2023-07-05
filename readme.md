@@ -38,7 +38,7 @@ In this small project I was inspired by a Chinese company headquartered in Shenz
   - Our Package Section (Middle of Pages Content)
   - Call Action Section (Bottom of Pages Content)
 - [ ] Banner use auto slide using JavaScript
-- [ ] Form Contact Us implements JavaScript Validation
+- [x] Form Contact Us implements JavaScript Validation
 - [x] Implement Responsive Design on each page (on Desktop and Mobile)
 - [x] Put css files inside of the css/ folder
 - [x] Put javascript files inside the js/ folder
@@ -55,3 +55,8 @@ In this small project I was inspired by a Chinese company headquartered in Shenz
 
 - [Facebook](https://web.facebook.com/profile.php?id=100088055513837)
 - [Instagram](https://www.instagram.com/georgejusen_/)
+
+- ## Reference
+
+ - [Flexbox ](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+ - [W3schools](https://www.w3schools.com/w3css/w3css_tables.asp)
