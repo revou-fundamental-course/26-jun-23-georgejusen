@@ -8,6 +8,18 @@ Jika Anda membutuhkan referensi atau ingin mempelajari cara kerja kode ini, disa
 
 Terima kasih atas pengertian dan kerjasamanya.
 
+## ⚠️ Warning
+
+**Do not copy this source code!**
+
+Copying and using someone else's code without permission is a violation of ethics and copyright. Please refrain from such actions.
+
+If you need a reference or want to learn how this code works, it is recommended to read and understand the code, and then rewrite it according to your needs.
+
+Thank you for your understanding and cooperation.
+
+
+
 # RevoU Mini Project - Fundamental
 
 Hi, my name is George Jusen. I'm one of the participants in the RevoU Fundamental Software Engineering course.
