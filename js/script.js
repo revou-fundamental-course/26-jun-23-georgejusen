@@ -54,10 +54,10 @@ let nav = document.querySelector("nav ul");
 window.addEventListener("DOMContentLoaded", function () {
   let slideIndex = 0;
   let slides = [
-    "../assets/hero_image/drone-hero2-optimized.jpg",
-    "../assets/hero_image/dji.jpg",
-    "../assets/hero_image/Drones.jpg",
-    "../assets/hero_image/hero-drone.jpg",
+    "assets/hero_image/drone-hero2-optimized.jpg",
+    "assets/hero_image/dji.jpg",
+    "assets/hero_image/Drones.jpg",
+    "assets/hero_image/hero-drone.jpg",
   ];
 
   let imageSlide = document.getElementById("image-slide");
