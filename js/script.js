@@ -46,3 +46,19 @@ document
       "Jenis Kelamin: " + jenisKelamin;
     document.getElementById("pesan").innerHTML = "Pesan: " + pesan;
   });
+
+// const images = [
+//   "../assets/hero_image/hero-drone.jpg",
+//   "../assets/hero_image/Drones.jpg",
+//   "../assets/hero_image/drone-hero2-optimized.jpg",
+// ];
+
+// const imageSlide = document.getElementById("image-slide");
+// let currentImageIndex = 0;
+
+// function changeImage() {
+//   imageSlide.innerHTML = `<img src="${images[currentImageIndex]}" alt="Slide Image">`;
+//   currentImageIndex = (currentImageIndex + 1) % images.length;
+// }
+
+// setInterval(changeImage, 3000); // Ganti gambar setiap 3 detik (3000 ms)

@@ -239,11 +239,14 @@ nav ul li {
     background-repeat: no-repeat;
 }
 
+
+
 .hero-text {
     padding: 4%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 
 /* Mengatur Headlines */
 .headlines {
