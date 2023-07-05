@@ -64,12 +64,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function showSlide(index) {
     imageSlide.style.opacity = 0;
-    imageSlide.style.transform = "translateX(-100%)";
+    imageSlide.style.transform = "translateX(-100%)"; // Menggeser slide ke kiri sebelum mengubah gambar
 
     setTimeout(function () {
       imageSlide.style.backgroundImage = "url('" + slides[index] + "')";
       imageSlide.style.opacity = 1;
-      imageSlide.style.transform = "translateX(0%)";
+      imageSlide.style.transform = "translateX(0%)"; // Kembali ke posisi semula setelah gambar diubah
     }, 500);
 
     slideIndex = index;
@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", function () {
     showSlide(slideIndex);
   }
 
-  setInterval(nextSlide, 6000); // Ganti slide setiap 3 detik
+  setInterval(nextSlide, 6000); // Ganti slide setiap 6 detik
 
   showSlide(slideIndex); // Tampilkan slide pertama saat halaman dimuat
 });
