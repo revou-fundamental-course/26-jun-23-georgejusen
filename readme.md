@@ -27,7 +27,9 @@ In this project I created a simple website about **DJI Drones Indonesian** by im
 # Mini Project Description
 
 In this small project I was inspired by a Chinese company headquartered in Shenzhen, Guangdong with factories all over the world. DJI is best known as a manufacturer of unmanned aircraft for aerial videography and photography.
-
+## Homepage
+![homepage](https://github.com/revou-fundamental-course/26-jun-23-georgejusen/assets/49087825/946d1598-ee94-4439-a107-6d97b7457964)
+## Homepage
 # Workflow Task
 
 Progress: ███████████████░░░░ 70%
