@@ -18,8 +18,6 @@ If you need a reference or want to learn how this code works, it is recommended 
 
 Thank you for your understanding and cooperation.
 
-
-
 # RevoU Mini Project - Fundamental
 
 Hi, my name is George Jusen. I'm one of the participants in the RevoU Fundamental Software Engineering course.
@@ -31,6 +29,8 @@ In this project I created a simple website about **DJI Drones Indonesian** by im
 In this small project I was inspired by a Chinese company headquartered in Shenzhen, Guangdong with factories all over the world. DJI is best known as a manufacturer of unmanned aircraft for aerial videography and photography.
 
 # Workflow Task
+
+Progress: ███████████████░░░░ 70%
 
 - [x] Slicing mockup above
 - [Link mockup here](https://app.moqups.com/Y8iumYO1yOg5P2v9YSZ4pW7u8Hs15D2s/view/page/a2d808b02)
@@ -59,5 +59,5 @@ In this small project I was inspired by a Chinese company headquartered in Shenz
 
 ## Reference
 
- - [Flexbox ](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
- - [W3schools](https://www.w3schools.com/w3css/w3css_tables.asp)
+- [Flexbox ](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [W3schools](https://www.w3schools.com/w3css/w3css_tables.asp)
