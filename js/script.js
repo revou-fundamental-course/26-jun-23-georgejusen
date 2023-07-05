@@ -1,28 +1,51 @@
 function validateForm() {
-  let fname = document.forms["form"]["fullname"].value;
-  let email = document.forms["form"]["email"].value;
-  let option = document.forms["form"]["option"].value;
+  let fullnameInput = document.getElementById("fullname");
+  let emailInput = document.getElementById("email");
+  let optionInput = document.getElementById("option");
 
-  if (fname == "") {
-    alert("nama tidak boleh kosong");
-    return false;
-  }
-  if (email == "") {
-    alert("email tidak boleh kosong");
-    return false;
-  }
-  if (option == "") {
-    alert("opsi tidak boleh kosong");
+  let fullnameValue = fullnameInput.value.trim();
+  let emailValue = emailInput.value.trim();
+  let optionValue = optionInput.value;
+
+  // Validasi field nama lengkap
+  if (fullnameValue === "") {
+    alert("Please enter your name.");
+    fullnameInput.focus();
     return false;
   }
 
-  document.getElementById("sender-fullname").innerHTML = fname;
-  document.getElementById("sender-email").innerHTML = email;
-  document.getElementById("sender-option").innerHTML = option;
+  // Validasi field email
+  if (emailValue === "") {
+    alert("Please enter your email address.");
+    emailInput.focus();
+    return false;
+  } else if (!isValidEmail(emailValue)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+    return false;
+  }
+
+  // Validasi field pilihan
+  if (optionValue === "") {
+    alert("Please select an option.");
+    optionInput.focus();
+    return false;
+  }
+
+  // Jika semua validasi sukses
+  return true;
 }
 
+function isValidEmail(email) {
+  // Regular expression untuk validasi email
+  let emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+  return emailRegex.test(email);
+}
+
+// Hamburger
 let menuToggle = document.querySelector(".menu-toggle input");
 let nav = document.querySelector("nav ul");
+// Hamburger
 
 document
   .getElementById("input-form")
@@ -47,18 +70,40 @@ document
     document.getElementById("pesan").innerHTML = "Pesan: " + pesan;
   });
 
-// const images = [
-//   "../assets/hero_image/hero-drone.jpg",
-//   "../assets/hero_image/Drones.jpg",
-//   "../assets/hero_image/drone-hero2-optimized.jpg",
-// ];
+window.addEventListener("DOMContentLoaded", function () {
+  var slideIndex = 0;
+  var slides = [
+    "../assets/hero_image/drone-hero2-optimized.jpg",
+    "../assets/hero_image/dji.jpg",
+    "../assets/hero_image/Drones.jpg",
+    "../assets/hero_image/hero-drone.jpg",
+  ];
 
-// const imageSlide = document.getElementById("image-slide");
-// let currentImageIndex = 0;
+  var imageSlide = document.getElementById("image-slide");
 
-// function changeImage() {
-//   imageSlide.innerHTML = `<img src="${images[currentImageIndex]}" alt="Slide Image">`;
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-// }
+  function showSlide(index) {
+    imageSlide.style.opacity = 0;
+    imageSlide.style.transform = "translateX(-100%)";
 
-// setInterval(changeImage, 3000); // Ganti gambar setiap 3 detik (3000 ms)
+    setTimeout(function () {
+      imageSlide.style.backgroundImage = "url('" + slides[index] + "')";
+      imageSlide.style.opacity = 1;
+      imageSlide.style.transform = "translateX(0%)";
+    }, 500);
+
+    slideIndex = index;
+  }
+
+  function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+
+    showSlide(slideIndex);
+  }
+
+  setInterval(nextSlide, 6000); // Ganti slide setiap 3 detik
+
+  showSlide(slideIndex); // Tampilkan slide pertama saat halaman dimuat
+});
