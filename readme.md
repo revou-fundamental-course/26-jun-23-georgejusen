@@ -56,7 +56,7 @@ In this small project I was inspired by a Chinese company headquartered in Shenz
 - [Facebook](https://web.facebook.com/profile.php?id=100088055513837)
 - [Instagram](https://www.instagram.com/georgejusen_/)
 
-- ## Reference
+## Reference
 
  - [Flexbox ](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
  - [W3schools](https://www.w3schools.com/w3css/w3css_tables.asp)
