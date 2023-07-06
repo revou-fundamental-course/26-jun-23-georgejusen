@@ -130,62 +130,6 @@ nav ul li:hover {
 
 /* Akhir dari navbar */
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 25px;
-    justify-content: space-around;
-    position: relative;
-}
-
-.menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    left: -6px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
-
-/* hamburger menu */
-.menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transition: all 0.5s;
-}
-
-
-/* Hamburger menu animation */
-.menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
-}
-
-.menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
-}
-
-.menu-toggle input:checked~span:nth-child(2) {
-    background-color: white;
-    transform: rotate(45deg);
-    translate: (-0px, 2px);
-}
-
-.menu-toggle input:checked~span:nth-child(4) {
-    background-color: white;
-    transform: rotate(-45deg);
-    translate: (-2px, 0);
-}
-
-.menu-toggle input:checked~span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
-}
-
-/* Responsive Navbar */
 /* Ukuran Tablet */
 @media screen and (max-width: 870px) {
     nav ul {
@@ -204,16 +148,6 @@ nav ul li:hover {
 
     .hero {
         max-height: 30vh;
-    }
-
-    .output-box {
-
-
-        max-width: 80%;
-        max-height: 60%;
-        background-color: white;
-
-
     }
 
     .our-headquarter h1 {
