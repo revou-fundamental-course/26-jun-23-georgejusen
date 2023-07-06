@@ -244,12 +244,6 @@ nav ul li:hover {
         flex-direction: column-reverse;
     }
 
-    .form-container {
-        margin-left: 0px;
-        background-color: #3e3e42;
-        display: flex;
-        flex-direction: column;
-    }
 
     .form-container-text {
         width: 20%;
@@ -268,37 +262,6 @@ nav ul li:hover {
         flex-direction: column;
     }
 
-
-
-
-
-    nav ul {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        background-color: #3E3E42;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        z-index: -1;
-        transform: translateX(100%);
-        transition: all 0.4s;
-    }
-
-
-
-    nav ul li {
-        height: 20%;
-        background-color: #3E3E42;
-        padding: 0px;
-        border-radius: 0px;
-
-    }
-
-    nav ul.slide {
-        transform: translateX(0);
-    }
 
     .hero {
         max-height: 20vh;
@@ -321,9 +284,11 @@ nav ul li:hover {
     }
 
     .headlines {
+        padding-bottom: 110vh;
         max-width: 100%;
         margin: 50px auto;
         font-size: 12px;
+        text-align: center;
     }
 
 
@@ -337,7 +302,7 @@ nav ul li:hover {
     .our-headquarter {
         max-width: 100%;
         max-height: 100%;
-        padding-bottom: 700px;
+
 
     }
 
@@ -355,9 +320,6 @@ nav ul li:hover {
 }
 
 /* Hero Image */
-
-
-
 
 .hero-container {
     padding-top: 50px;
