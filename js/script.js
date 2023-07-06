@@ -7,7 +7,7 @@ function validateForm() {
 
   // Validasi Nama (tidak boleh kosong)
   if (fullname == "") {
-    alert("Nama harus diisi");
+    showModal("Nama harus diisi");
     return false;
   }
 
@@ -15,7 +15,7 @@ function validateForm() {
   if (email !== "") {
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-      alert("Format email tidak valid");
+      showModal("Format email tidak valid");
       return false;
     }
   }
@@ -24,20 +24,20 @@ function validateForm() {
   if (phone !== "") {
     let phonePattern = /^[0-9]{9,12}$/;
     if (!phonePattern.test(phone)) {
-      alert("Format nomor telepon tidak valid");
+      showModal("Format nomor telepon tidak valid");
       return false;
     }
   }
 
   // Validasi Pesan (tidak boleh kosong)
   if (message == "") {
-    alert("Pesan harus diisi");
+    showModal("Pesan harus diisi");
     return false;
   }
 
   // Validasi Opsi (harus dipilih)
   if (option == "") {
-    alert("Silakan pilih opsi");
+    showModal("Silakan pilih opsi");
     return false;
   }
 
@@ -45,6 +45,17 @@ function validateForm() {
   return true;
 }
 
+function showModal(message) {
+  var modal = document.getElementById("myModal");
+  var modalMessage = document.getElementById("modalMessage");
+  modalMessage.innerHTML = message;
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
 // ----------------------------------------------------------------------------------------
 // Hamburger
 let menuToggle = document.querySelector(".menu-toggle input");
